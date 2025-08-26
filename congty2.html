@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>CÔNG TY CỔ PHẦN BELLSYSTEM24 VIỆT NAM</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body class="bg-gray-100">
+
+  <header class="bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-500 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold flex items-center gap-2">
+        <i class="ph ph-buildings text-3xl"></i> 
+        CÔNG TY CỔ PHẦN BELLSYSTEM24 VIỆT NAM
+      </h1>
+      <a href="index.html" class="bg-white text-indigo-700 px-4 py-2 rounded-lg shadow hover:bg-gray-100 font-medium">
+        ⬅ Quay lại
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto mt-6 bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold mb-4 text-indigo-700">Thông tin tuyển dụng</h2>
+
+    <section class="mb-6">
+      <h3 class="text-xl font-semibold mb-2">1. Mô tả công việc</h3>
+      <ul class="list-disc ml-6 space-y-1">
+        <li>Thực hiện các bước trong quy trình tuyển dụng mass cho các dự án như CSKH, telesales, IT support,...</li>
+        <li>Hỗ trợ kiểm tra hồ sơ và sắp xếp lịch phỏng vấn.</li>
+        <li>Tương tác, hướng dẫn và đánh giá ứng viên trong quá trình tuyển dụng.</li>
+        <li>Đề xuất ý tưởng mở rộng nguồn và kênh tuyển dụng.</li>
+        <li>Tham gia xây dựng thương hiệu tuyển dụng cá nhân và công ty.</li>
+      </ul>
+    </section>
+
+    <section class="mb-6">
+      <h3 class="text-xl font-semibold mb-2">2. Thời gian làm việc</h3>
+      <ul class="list-disc ml-6 space-y-1">
+        <li>Từ thứ 2 - thứ 6 (làm hai ngày thứ 7/tháng)</li>
+        <li>Full-time: từ 8h00 - 17h00</li>
+        <li>Part-time ca sáng (8h - 12h)/ca chiều (13h - 17h)</li>
+      </ul>
+    </section>
+
+    <section class="mb-6">
+      <h3 class="text-xl font-semibold mb-2">3. Địa điểm làm việc</h3>
+      <p class="ml-6">Tầng 3, Tòa nhà Trung Yên 1, Số 1A, Vũ Phạm Hàm, Trung Hòa, Cầu Giấy, Hà Nội.</p>
+    </section>
+
+    <section class="mb-6">
+      <h3 class="text-xl font-semibold mb-2">4. Thu nhập</h3>
+      <p class="ml-6">Hỗ trợ thực tập: <span class="font-bold text-green-600">2.000.000 VNĐ/tháng + thưởng</span>.</p>
+    </section>
+
+    <section class="mb-6">
+      <h3 class="text-xl font-semibold mb-2">5. Quyền lợi</h3>
+      <ul class="list-disc ml-6 space-y-1">
+        <li>Có lộ trình phát triển lên Nhân viên, Chuyên viên,...</li>
+        <li>Được đào tạo chuyên môn và kỹ năng nghiệp vụ.</li>
+        <li>Làm việc trong môi trường năng động, có cơ hội thăng tiến.</li>
+        <li>Hưởng phúc lợi theo quy định của Luật Lao động và công ty.</li>
+        <li>Được hướng dẫn 1-1, đào tạo bài bản.</li>
+        <li>Có định hướng rõ ràng cho công việc.</li>
+      </ul>
+    </section>
+
+    <div class="mt-8 flex gap-4">
+      <button onclick="applyJob()" class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 font-semibold">
+        Ứng tuyển ngay
+      </button>
+      <a href="index.html" class="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg shadow hover:bg-gray-300 font-medium">
+        ⬅ Quay lại danh sách
+      </a>
+    </div>
+  </main>
+
+  <div id="successPopup" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white rounded-xl shadow-2xl p-8 text-center max-w-sm">
+      <i class="ph ph-check-circle text-green-500 text-5xl mb-4"></i>
+      <h2 class="text-2xl font-bold mb-2 text-green-600">Ứng tuyển thành công!</h2>
+      <p class="text-gray-600 mb-6">Cảm ơn bạn đã ứng tuyển. Chúng tôi sẽ liên hệ trong thời gian sớm nhất.</p>
+      <button onclick="closePopup()" class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Đóng</button>
+    </div>
+  </div>
+
+  <script>
+    function applyJob() {
+      document.getElementById("successPopup").classList.remove("hidden");
+    }
+    function closePopup() {
+      document.getElementById("successPopup").classList.add("hidden");
+    }
+  </script>
+</body>
+</html>

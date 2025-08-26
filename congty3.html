@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Công ty TNHH MIBS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <header class="bg-gradient-to-r from-blue-800 to-indigo-600 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold flex items-center gap-2">
+        <i class="ph ph-buildings text-3xl"></i> 
+        Công ty TNHH MIBS
+      </h1>
+      <a href="index.html" class="bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-100 font-medium">
+        ⬅ Quay lại
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto mt-6 bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold mb-4">Công ty TNHH MIBS</h2>
+
+    <section class="mb-4">
+      <h3 class="text-xl font-semibold mb-2">1. Mô tả công việc</h3>
+      <ul class="list-disc ml-6">
+        <li>Hỗ trợ cài đặt, cấu hình phần mềm, hệ điều hành, thiết bị văn phòng cho nhân viên (máy tính, máy in, wifi…).</li>
+        <li>Tiếp nhận và xử lý các yêu cầu hỗ trợ kỹ thuật từ người dùng (trực tiếp hoặc qua email, điện thoại).</li>
+        <li>Hỗ trợ bảo trì, nâng cấp hệ thống máy tính, mạng nội bộ.</li>
+        <li>Ghi nhận, theo dõi và cập nhật tình trạng xử lý các sự cố IT.</li>
+        <li>Tham gia kiểm kê, quản lý tài sản IT (thiết bị, linh kiện...).</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h3 class="text-xl font-semibold mb-2">2. Thời gian làm việc</h3>
+      <ul class="list-disc ml-6">
+        <li>Parttime hoặc Fulltime</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h3 class="text-xl font-semibold mb-2">3. Địa điểm làm việc</h3>
+      <ul class="list-disc ml-6">
+        <li>27B Nguyễn Đình Chiểu, Phường Đa Kao, Quận 1, Thành phố Hồ Chí Minh.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h3 class="text-xl font-semibold mb-2">4. Thu nhập</h3>
+      <p>Hỗ trợ thực tập: 2.000.000 VNĐ/tháng + thưởng.</p>
+    </section>
+
+    <section class="mb-4">
+      <h3 class="text-xl font-semibold mb-2">5. Quyền lợi</h3>
+      <ul class="list-disc ml-6">
+        <li>Cơ hội chứng tỏ năng lực và phát triển bản thân, nhiều cơ hội thăng tiến.</li>
+        <li>Được đào tạo kỹ năng chuyên ngành IT, tham gia các khóa học nội bộ và bên ngoài.</li>
+      </ul>
+    </section>
+
+    <div class="mt-6 flex gap-4">
+      <button onclick="showSuccess()" class="px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 font-medium">
+        Ứng tuyển ngay
+      </button>
+      <a href="index.html" class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
+        ⬅ Quay lại danh sách
+      </a>
+    </div>
+  </main>
+
+  <div id="successPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-6 rounded-2xl shadow-lg text-center max-w-sm">
+      <h3 class="text-xl font-bold text-green-600 mb-2">🎉 Ứng tuyển thành công!</h3>
+      <p class="text-gray-700">Chúng tôi đã nhận được hồ sơ của bạn.</p>
+      <button onclick="closePopup()" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+        Đóng
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function showSuccess() {
+      document.getElementById("successPopup").classList.remove("hidden");
+    }
+    function closePopup() {
+      document.getElementById("successPopup").classList.add("hidden");
+    }
+  </script>
+</body>
+</html>
