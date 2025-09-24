@@ -41,21 +41,37 @@ Dữ liệu: SQLite/CSV
 📁 Cấu trúc dự án
 
 STUDENT_JOB_AI/
+
 ├── data/
+
 │   └── students.csv             # Hồ sơ sinh viên
+
 │   └── companies.csv            # Yêu cầu doanh nghiệp
+
 ├── static/
+
 │   └── header.png               # Logo / banner
+
 ├── templates/
+
 │   ├── upload.html              # Upload CV
+
 │   ├── dashboard.html           # Dashboard ghép
+
 │   └── result.html              # Kết quả ghép
+
 ├── app.py                       # Ứng dụng chính FastAPI
+
 ├── extract_cv.py                 # Trích xuất thông tin từ CV
+
 ├── match_jobs.py                 # Thuật toán ghép kỹ năng
+
 ├── train_model.py                # Huấn luyện mô hình
+
 ├── student_profiles.json         # Hồ sơ đã xử lý
+
 └── venv/                         # Môi trường ảo
+
 🚀 Hướng dẫn cài đặt & sử dụng
 
 Tải toàn bộ mã nguồn (các file index.html, script.js, companies.js) , congty1.html), congty2.html, congty3.html, về máy.
