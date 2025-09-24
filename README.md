@@ -1,24 +1,45 @@
 ✨ Tính năng chính
+
 📥 Trích xuất & phân tích CV
+
 Sinh viên tải CV (PDF/Ảnh) lên hệ thống.
+
 OCR + NLP tự động trích xuất: Họ tên, email, vị trí mong muốn, kỹ năng.
+
 🤖 Ghép kỹ năng & yêu cầu vị trí
+
 So khớp kỹ năng sinh viên với yêu cầu tuyển dụng của doanh nghiệp.
+
 Tính toán độ phù hợp (0–100%).
+
 Đề xuất công ty thực tập phù hợp nhất.
+
 📊 Quản lý & Báo cáo
+
 Danh sách gợi ý doanh nghiệp kèm độ phù hợp.
+
 Bảng thống kê: số lượng sinh viên – doanh nghiệp đã ghép thành công.
+
 Xuất kết quả ghép ra CSV/Excel.
+
 🛠 Công nghệ sử dụng
+
 Ngôn ngữ: Python 3.10+
+
 Backend: FastAPI (Uvicorn)
+
 Machine Learning / NLP: scikit-learn, spaCy
+
 Xử lý OCR: Tesseract.js
+
 Xử lý dữ liệu: Pandas, NumPy
+
 Frontend: Jinja2, HTML5, CSS3, Bootstrap
+
 Dữ liệu: SQLite/CSV
+
 📁 Cấu trúc dự án
+
 STUDENT_JOB_AI/
 ├── data/
 │   └── students.csv             # Hồ sơ sinh viên
@@ -36,15 +57,25 @@ STUDENT_JOB_AI/
 ├── student_profiles.json         # Hồ sơ đã xử lý
 └── venv/                         # Môi trường ảo
 🚀 Hướng dẫn cài đặt & sử dụng
+
 Tải toàn bộ mã nguồn (các file index.html, script.js, companies.js) , congty1.html), congty2.html, congty3.html, về máy.
+
 Đặt chúng trong cùng một thư mục (ví dụ: Student_Company_Matching).
+
 Đảm bảo máy có kết nối Internet để tải thư viện Tesseract.js từ CDN.
+
 Mở file index.html trực tiếp bằng trình duyệt (Chrome, Edge, Firefox...).
+
 Sử dụng giao diện:
+
 📄 Upload CV để hệ thống OCR trích xuất thông tin.
+
 ✏️ Kiểm tra/chỉnh sửa thông tin (tên, email, kỹ năng...).
+
 💾 Lưu hồ sơ và nhấn “Hiển thị công ty phù hợp” để xem danh sách.
+
 🖼 Hình ảnh ứng dụng
+
 🔐 Giao diện Upload CV:
 
 <img width="783" height="377" alt="image" src="https://github.com/user-attachments/assets/c0399809-a5b6-4460-b784-b0ce87648a68" />
